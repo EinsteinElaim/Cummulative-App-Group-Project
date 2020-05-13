@@ -1,0 +1,85 @@
+{{#partial "content"}}
+    <!-- Bootstrap row -->
+    <div class="row" id="body-row">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="d-none d-md-block col-2">
+            <!-- d-* hides the Sidebar in smaller devices. Its items can be kept on the Navbar
+            'Menu' -->
+            <!-- Bootstrap List Group -->
+            <ul class="list-group sticky-top sticky-offset">
+                <!-- Separator with title -->
+                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                    <small>MAIN MENU</small>
+                </li>
+                <!-- /END Separator -->
+                <!-- Menu List -->
+                <a href="#gmail" data-toggle="collapse" aria-expanded="false" class="bg-dark
+                list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <i class="fas fa-envelope mr-3"></i>
+                        <span class="menu-collapsed">Gmail</span>
+                    </div>
+                </a>
+
+                <a href="#whatsapp" data-toggle="collapse" aria-expanded="false" class="bg-dark
+                list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <i class="fab fa-whatsapp mr-3"></i>
+                        <span class="menu-collapsed">WhatsApp</span>
+                    </div>
+                </a>
+
+                <a href="#instagram" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <i class="fab fa-instagram mr-3"></i>
+                        <span class="menu-collapsed">Instagram</span>
+                    </div>
+                </a>
+
+                <a href="#youtube" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <i class="fab fa-youtube mr-3"></i>
+                        <span class="menu-collapsed">YouTube</span>
+                    </div>
+                </a>
+                <!-- Separator without title -->
+                <li class="list-group-item sidebar-separator menu-collapsed"></li>
+                <!-- /END Separator -->
+
+                <a href="#settings" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <i class="fas fa-user-cog mr-3"></i>
+                        <span class="menu-collapsed">Settings</span>
+                    </div>
+                </a>
+
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <i class="fa fa-question fa-fw mr-3"></i>
+                        <span class="menu-collapsed">Help</span>
+                    </div>
+                </a>
+
+                <!-- Logo -->
+                <li class="list-group-item logo-separator d-flex justify-content-center">
+                    <img src="/images/c.svg" width="30" height="30">
+                </li>
+            </ul>
+            <!-- List Group END-->
+        </div>
+        <!-- sidebar-container END -->
+
+        <!-- MAIN -->
+        <div class="col py-3">
+            <h1>
+                App data
+            </h1>
+        </div>
+        <!-- Main Col END -->
+
+    </div>
+    <!-- body-row END -->
+
+{{/partial}}
+
+{{> layout.hbs}}
