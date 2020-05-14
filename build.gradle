@@ -1,5 +1,12 @@
-apply plugin: 'java'
-apply plugin: 'application'
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.cummulative.app.groupproject'
+version '1.0-SNAPSHOT'
+//>>>>>>> 3ff3ea6657bc218d8d1aa742d53faec4d5991cc4
 
 mainClassName = 'App'
 sourceCompatibility = 1.8
@@ -11,7 +18,13 @@ repositories {
 }
 
 dependencies {
+
     compile 'com.google.api-client:google-api-client:1.23.0'
     compile 'com.google.oauth-client:google-oauth-client-jetty:1.23.0'
     compile 'com.google.apis:google-api-services-gmail:v1-rev83-1.23.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "com.sparkjava:spark-core:2.6.0"
+    compile "com.sparkjava:spark-template-handlebars:2.5.5"
+    compile 'org.slf4j:slf4j-simple:1.7.21'
 }
+//>>>>>>> 3ff3ea6657bc218d8d1aa742d53faec4d5991cc4
